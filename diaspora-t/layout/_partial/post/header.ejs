@@ -1,0 +1,23 @@
+<div id="top" style="display: block;">
+    <div class="audio-bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="http://localhost:4000/" data-url="<%= config.url %>"></a>
+	<!--<div title="播放/暂停" class="icon-play"></div>-->
+    <h3 class="subtitle"><%- page.title %></h3>
+	<div class="articleMenuBox">
+		<img src="/img/menu.png" alt="menu" class="articleMenu handtype">
+	</div>
+    <div class="social">
+		<!--<div class="like-icon">-->
+			<!--<img src="/img/menu.png" alt="menu">-->
+			<!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+		<!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+	<!--浏览进度条，上方-->
+    <div class="scrollbar"></div>
+</div>

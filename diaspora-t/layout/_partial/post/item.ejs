@@ -1,0 +1,10 @@
+<div class="post">
+    <a href="<%- url_for(post.path) %>" title="<%- post.title || "未命名" %>">
+        <%- image_tag(post.cover || theme.cover, {class: "cover", width: 680, height: 382}) %>
+    </a>
+    <div class="else">
+        <h3><%- link_to(post.path, post.title || "未命名", {class: "posttitle"}) %></h3>
+        <p><%- post.date.locale("zh-cn").format("MMMM DD 日, YYYY") %></p>
+        <p><%- truncate(strip_html(post.content), {length: 100, omission: '...'}) %></p>
+    </div>
+</div>
